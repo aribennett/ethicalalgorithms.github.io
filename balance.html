@@ -78,13 +78,13 @@
     <!-- Main container -->
     <div class="container main-container clearfix"> 
         <div class="col-md-6">
-            <img src="img/tesselite/tisketches.jpg" class="img-responsive" alt="" />
+            <iframe width="556" height="417" src="https://www.youtube.com/embed/qBG49Jpp9kY" frameborder="0" allowfullscreen></iframe>
         </div>
         <div class="col-md-6">
            <h3 class="uppercase">Balance </h3>
            <h5>Created for Paul Mitiguy to inspire interest in active controls coursework</h5>
            <div class="h-30"></div>
-            <p>The KED is an orthotic device built for Max Conserva to increase the extension force of his right knee. When he was 8 years old, Max was involved in a life changing accident that greatly damaged the quadricepts on his right knee, leaving them unable to bear weight without pain. I was the principal designer, with suport from Marshall Haltom in design and logistics. Eddie Momanyi and Jesse Shapiro provided testing support, and it was based on inital groundwork by Marshall Haltom and Susan Nitta</p>
+            <p>"Paul quote goes here" Paul Mitiguy</p>
 
             <div class="h-10"></div>
 
@@ -99,23 +99,12 @@
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Design </h3>
-            <p>The KED works by shifting the flexion stength of Max's right knee to extension, by use of a tensile rubber cord running over his right knee. This rubber cord also moves over rollers that allow the tension at the top and bottom of the cord to equalize, and change the momemnt arm of the cord increasing tension nonlinearly deep in a bend. The cords are also easily removeable, allowing different tensions and preloads for different activities by quickly swapping bands.</p>
+            <h3 class="uppercase"> Initial Design </h3>
+            <p>Balance began as an effort to create an engaging and dynamic demonstration of dynamic controls for ME 261 at Stanford University. The main mechanical component of the inverted pendulum is a linear actuator, which this initial design attempted to create with minimal cost and effort. Unfortunately it was not stiff enough to provide smooth, non-binding motion.</p>
             <div class="h-10"></div>
         </div>
     </div>
 
-    <div class="container main-container clearfix"> 
-        <div class="col-md-6">
-            <img src="img/balance/balmachine.jpg" class="img-responsive" alt="" />
-        </div>
-        <div class="col-md-6">
-           <div class="h-30"></div>
-            <h3 class="uppercase"> Pattern Making </h3>
-            <p>Many different geometries and tensile elements were tested, but we ultimately settled on a natural latex rubber because it was compliant and did not require dangerous concentrations of force, and a progressive roller cam that drastically increased force in a deep bend, and to allowed rolling to keep the tension in the rubber constant over it's length during stretching. Direct user testing was critical, as Max had insights into how each design felt and responded to complex motions like walking, running and jumping.</p>
-            <div class="h-10"></div>
-        </div>
-    </div>
 
     <div class="container main-container clearfix"> 
         <div class="col-md-6">
@@ -123,8 +112,8 @@
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Ramming up </h3>
-            <p>Once the design was decided upon, I machined a protype from aluminum to test a proposed finalized geometry. This was designed to stand to last longer than our rapid prototypes, and be a more permanent fixture on Max's brace. This allowed us to test longer term usability, during extended workouts and runs. This prototype functioned well, but after a week the aluminum exhibitied aggressive wear, and we decided the final part would should be made from stainless steel for wear and volume reasons. </p>
+            <h3 class="uppercase"> Second Incarnation </h3>
+            <p>To combat issues with stiffness, I created a new design that I cut from half inch aluminum plate, and had two half inch precision steel rails to provide greater stiffness. This design ran much smoother, with very little vibration and a properly constrained set of linear bearings. This design was actually overdesigned for the given application, as it could tolerate forces well beyond the acceleration forces of an inverted pendulum.</p>
             <div class="h-10"></div>
         </div>
     </div>
@@ -135,8 +124,8 @@
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Pouring Metal </h3>
-            <p>Due to the nature of Max's injury, after time and testing there were always ways to improve his brace. This was the final prototype we could make during our one quarter developing this solution for Max. It was machined by a machine shop from 303 stainless steel, so that he could use it in more corosive conditions such as biking in the rain or snowboarding, and so that it would wear slower with normal use. He now uses it daily and it is a staple on his website, <a href="http:\\www.goodleg.org">GoodLeg.org</a>. Special thanks to Max Conserva for being brave enough to let us strap untested devices to his leg.</p>
+            <h3 class="uppercase"> Motor Design </h3>
+            <p>The initial motor chocie was a brushed DC gearmotor, driving a high pitch lead screw. The combination of high cogging torque and backlash in the gearhed ultimately made it a poor fit for this system. After a brief detour through stepper motors, a three phase brushless motor with a custom motor driver was chosen for it's low cogging torque, high torque output and ability to function well at both extremely low and very high RPM.</p>
             <div class="h-10"></div>
         </div>
     </div>
@@ -147,8 +136,8 @@
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Postmachining </h3>
-            <p>Due to the nature of Max's injury, after time and testing there were always ways to improve his brace. This was the final prototype we could make during our one quarter developing this solution for Max. It was machined by a machine shop from 303 stainless steel, so that he could use it in more corosive conditions such as biking in the rain or snowboarding, and so that it would wear slower with normal use. He now uses it daily and it is a staple on his website, <a href="http:\\www.goodleg.org">GoodLeg.org</a>. Special thanks to Max Conserva for being brave enough to let us strap untested devices to his leg.</p>
+            <h3 class="uppercase"> Final Incarnation </h3>
+            <p>The final mechanical revision consisted of a belt driven linear cart, with a low KV brushless motor. The belt drive was chosen as an easy method of converting rotational into linear motion, as well as easily setting ratio of the RPM of the motor to the velocity of the slide. The linear stage is a purchased aluminum extrusion that is a good compromise between stiffness and cost.  </p>
             <div class="h-10"></div>
         </div>
     </div>
@@ -159,8 +148,8 @@
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Test Fit </h3>
-            <p>Due to the nature of Max's injury, after time and testing there were always ways to improve his brace. This was the final prototype we could make during our one quarter developing this solution for Max. It was machined by a machine shop from 303 stainless steel, so that he could use it in more corosive conditions such as biking in the rain or snowboarding, and so that it would wear slower with normal use. He now uses it daily and it is a staple on his website, <a href="http:\\www.goodleg.org">GoodLeg.org</a>. Special thanks to Max Conserva for being brave enough to let us strap untested devices to his leg.</p>
+            <h3 class="uppercase"> Control Implementation </h3>
+            <p>Controls for the entire system are implemented on A Teensy 3.1 in Arduino. Arduino was chosen for ease of development speed, and so that future students could see a controls implementation with the minutia of the firmware abstracted out. I developed both the pendulum control loop and the sinusoidal commutation loop for the motor and spun a custom PCB in EAGLECAD that interfaces the Teensy with both the motor control circuitry and the input sensors. </p>
             <div class="h-10"></div>
         </div>
     </div>
@@ -171,8 +160,8 @@
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Test Fit </h3>
-            <p>Due to the nature of Max's injury, after time and testing there were always ways to improve his brace. This was the final prototype we could make during our one quarter developing this solution for Max. It was machined by a machine shop from 303 stainless steel, so that he could use it in more corosive conditions such as biking in the rain or snowboarding, and so that it would wear slower with normal use. He now uses it daily and it is a staple on his website, <a href="http:\\www.goodleg.org">GoodLeg.org</a>. Special thanks to Max Conserva for being brave enough to let us strap untested devices to his leg.</p>
+            <h3 class="uppercase"> Suplementary Software </h3>
+            <p>I also wrote a live display for telemetry from the pendulum, so that the effects of changes to the control system ould be easily seen as data. Pictured here is a step response to a change in the position setpoint. In addition, the software saves the telemetry as an spreadsheet for numerical analysis. Special thanks to Paul Mitiguy for all his help with this project and his willingness to give me units on nothing but faith. </p>
             <div class="h-10"></div>
         </div>
     </div>
