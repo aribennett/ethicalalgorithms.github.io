@@ -41,7 +41,7 @@
     </div>
     <!-- end Preloader -->
 
-    <div class="container-fluid"> 
+    <div class="container-fluid">
        <!-- box-header -->
         <header class="box-header">
             <div class="box-logo">
@@ -53,7 +53,7 @@
             </a>
         </header>
         <!-- end box-header -->
-        
+
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
@@ -65,9 +65,9 @@
                 <li><a href="resume.html">resume</a></li>
             </ul>
         </nav>
-        <!-- end nav -->  
+        <!-- end nav -->
     </div>
-    
+
     <!-- Top bar -->
     <div class="top-bar">
         <h1>Iron</h1>
@@ -76,103 +76,77 @@
     <!-- end Top bar -->
     <div class="h-30"></div>
     <!-- Main container -->
-    <div class="container main-container clearfix"> 
+    <div class="container main-container clearfix">
         <div class="col-md-6">
             <img src="img/iron/ironcad.png" class="img-responsive" alt="" />
         </div>
         <div class="col-md-6">
-           <h3 class="uppercase">Overshoot </h3>
-           <h5>Created for Dave Beach to demonstrate casting fundementals in a fun way</h5>
+           <h3 class="uppercase">Iron </h3>
+           <h5>A better soldering iron</h5>
            <div class="h-30"></div>
-            <p>The KED is an orthotic device built for Max Conserva to increase the extension force of his right knee. When he was 8 years old, Max was involved in a life changing accident that greatly damaged the quadricepts on his right knee, leaving them unable to bear weight without pain. I was the principal designer, with suport from Marshall Haltom in design and logistics. Eddie Momanyi and Jesse Shapiro provided testing support, and it was based on inital groundwork by Marshall Haltom and Susan Nitta</p>
-
+            <p>After a lot of searching for ideas, and soul searching on my part, I settled on a soldering iron, as a personal and meaningful project for ME318: Computer Aided Product Creation. After a lot of design iterations, I settled on a round dial design with an oled readout in the center. I based my design on the Weller WES-51, and did some hardware hacking to make allow me to control the iron from my own microcontroller and do the interaction design myself.</p>
             <div class="h-10"></div>
-
-
         </div>
     </div>
     <!-- end Main container -->
 
-    <div class="container main-container clearfix"> 
+    <div class="container main-container clearfix">
         <div class="col-md-6">
              <img src="img/iron/ironfront.jpg" class="img-responsive" alt="" />
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Design </h3>
-            <p>The KED works by shifting the flexion stength of Max's right knee to extension, by use of a tensile rubber cord running over his right knee. This rubber cord also moves over rollers that allow the tension at the top and bottom of the cord to equalize, and change the momemnt arm of the cord increasing tension nonlinearly deep in a bend. The cords are also easily removeable, allowing different tensions and preloads for different activities by quickly swapping bands.</p>
+            <h3 class="uppercase"> Initial Machining </h3>
+            <p>The face of the soldering iron was machined from acrylic on a Haas  office mill, so that when finished, it would have a really clean glossy black finish. I used a custom fixture plate, and prepared my stock using a laser cutter to avoid having to spend time machining the stock. Each piece of stock is properly constrained using a pinhole and a slot to allow me to do part flips while retaining accurate datums. </p>
             <div class="h-10"></div>
         </div>
     </div>
 
-    <div class="container main-container clearfix"> 
-        <div class="col-md-6">
-             <img src="img/iron/ironfit.jpg" class="img-responsive" alt="" />
-        </div>
-        <div class="col-md-6">
-           <div class="h-30"></div>
-            <h3 class="uppercase"> Pattern Making </h3>
-            <p>Many different geometries and tensile elements were tested, but we ultimately settled on a natural latex rubber because it was compliant and did not require dangerous concentrations of force, and a progressive roller cam that drastically increased force in a deep bend, and to allowed rolling to keep the tension in the rubber constant over it's length during stretching. Direct user testing was critical, as Max had insights into how each design felt and responded to complex motions like walking, running and jumping.</p>
-            <div class="h-10"></div>
-        </div>
-    </div>
 
-    <div class="container main-container clearfix"> 
+    <div class="container main-container clearfix">
         <div class="col-md-6">
              <img src="img/iron/ironencoder.jpg" class="img-responsive" alt="" />
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Ramming up </h3>
-            <p>Once the design was decided upon, I machined a protype from aluminum to test a proposed finalized geometry. This was designed to stand to last longer than our rapid prototypes, and be a more permanent fixture on Max's brace. This allowed us to test longer term usability, during extended workouts and runs. This prototype functioned well, but after a week the aluminum exhibitied aggressive wear, and we decided the final part would should be made from stainless steel for wear and volume reasons. </p>
+            <h3 class="uppercase"> Detail Machining </h3>
+            <p>The primary input for the soldering iron is large, custom made encoder cut from a piece of aluminum with a large number of teeth that provided a nice fine resolution. The ecoder was build from a pair of IR sensors mounted nienty degrees out of phase in the face of the iron, detecting the reflective diference between black acrylic and aluminum. The aluminum provides a good brushed contrast to the poished black acrylic, and a nice distinct touchpoint. </p>
             <div class="h-10"></div>
         </div>
     </div>
 
-     <div class="container main-container clearfix"> 
+     <div class="container main-container clearfix">
         <div class="col-md-6">
              <img src="img/iron/ironface.jpg" class="img-responsive" alt="" />
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Postmachining </h3>
-            <p>Due to the nature of Max's injury, after time and testing there were always ways to improve his brace. This was the final prototype we could make during our one quarter developing this solution for Max. It was machined by a machine shop from 303 stainless steel, so that he could use it in more corosive conditions such as biking in the rain or snowboarding, and so that it would wear slower with normal use. He now uses it daily and it is a staple on his website, <a href="http:\\www.goodleg.org">GoodLeg.org</a>. Special thanks to Max Conserva for being brave enough to let us strap untested devices to his leg.</p>
+            <h3 class="uppercase"> Face Assembly </h3>
+            <p>With the parts for the face cut, I added in the electronics and LEDs to make a good display, and then added in diffuse acrylic pressed into the face to prevent there from being hotspots and blend the LEDs together convincingly. Stainless steel fasteners hold the entire assembly together, and then the entire assembly is fixed to the back portion holding the transformer. The microcontroller that interfaces the the input and display with the stock soldering iron also sits just behind the face.</p>
             <div class="h-10"></div>
         </div>
     </div>
 
-     <div class="container main-container clearfix"> 
-        <div class="col-md-6">
-           <img src="img/iron/ironbase.jpg" class="img-responsive" alt="" />
-        </div>
-        <div class="col-md-6">
-           <div class="h-30"></div>
-            <h3 class="uppercase"> Test Fit </h3>
-            <p>Due to the nature of Max's injury, after time and testing there were always ways to improve his brace. This was the final prototype we could make during our one quarter developing this solution for Max. It was machined by a machine shop from 303 stainless steel, so that he could use it in more corosive conditions such as biking in the rain or snowboarding, and so that it would wear slower with normal use. He now uses it daily and it is a staple on his website, <a href="http:\\www.goodleg.org">GoodLeg.org</a>. Special thanks to Max Conserva for being brave enough to let us strap untested devices to his leg.</p>
-            <div class="h-10"></div>
-        </div>
-    </div>
-
-    <div class="container main-container clearfix"> 
+    <div class="container main-container clearfix">
         <div class="col-md-6">
             <img src="img/iron/ironholder.jpg" class="img-responsive" alt="" />
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Final Assembly </h3>
-            <p>Due to the nature of Max's injury, after time and testing there were always ways to improve his brace. This was the final prototype we could make during our one quarter developing this solution for Max. It was machined by a machine shop from 303 stainless steel, so that he could use it in more corosive conditions such as biking in the rain or snowboarding, and so that it would wear slower with normal use. He now uses it daily and it is a staple on his website, <a href="http:\\www.goodleg.org">GoodLeg.org</a>. Special thanks to Max Conserva for being brave enough to let us strap untested devices to his leg.</p>
+            <h3 class="uppercase"> Iron Holder </h3>
+            <p>With the body and face of the iron done, I moved on to making a custom iron holder that matched the lines and the aesthetic of the main iron. All of the parts are pressed together, which works well due to the low required force of the holder. The barrel of the iron doesn't get very hot, so the frame of the holder works just fine made out of aluminum.</p>
             <div class="h-10"></div>
         </div>
     </div>
 
-     <div class="container main-container clearfix"> 
+     <div class="container main-container clearfix">
         <div class="col-md-6">
             <img src="img/iron/ironglam.jpg" class="img-responsive" alt="" />
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Final Assembly </h3>
-            <p>Due to the nature of Max's injury, after time and testing there were always ways to improve his brace. This was the final prototype we could make during our one quarter developing this solution for Max. It was machined by a machine shop from 303 stainless steel, so that he could use it in more corosive conditions such as biking in the rain or snowboarding, and so that it would wear slower with normal use. He now uses it daily and it is a staple on his website, <a href="http:\\www.goodleg.org">GoodLeg.org</a>. Special thanks to Max Conserva for being brave enough to let us strap untested devices to his leg.</p>
+            <h3 class="uppercase"> Result </h3>
+            <p>The final outcome of my project was a soldering iron that has a more intuitive interface, more information and feedback about the state of the iron and a cleaner look sitting on my desk. I learned a lot about the nuances of machining in my first exposure to CNC, and also a lot about my own design process. I'd like to thank Craig Milroy for never letting any of my bad ideas slide as maybe even okay, and forcing me to broaden my thinking.</p>
             <div class="h-10"></div>
         </div>
     </div>
@@ -184,7 +158,7 @@
         </div>
     </footer>
     <!-- end footer -->
-    
+
     <!-- back to top -->
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
     <!-- end back to top -->
