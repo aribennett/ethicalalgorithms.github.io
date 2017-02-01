@@ -41,7 +41,7 @@
     </div>
     <!-- end Preloader -->
 
-    <div class="container-fluid"> 
+    <div class="container-fluid">
        <!-- box-header -->
         <header class="box-header">
             <div class="box-logo">
@@ -53,7 +53,7 @@
             </a>
         </header>
         <!-- end box-header -->
-        
+
         <!-- nav -->
         <nav>
             <ul class="box-primary-nav">
@@ -65,9 +65,9 @@
                 <li><a href="resume.html">resume</a></li>
             </ul>
         </nav>
-        <!-- end nav -->  
+        <!-- end nav -->
     </div>
-    
+
     <!-- Top bar -->
     <div class="top-bar">
         <h1>Wayfinder</h1>
@@ -77,15 +77,15 @@
     <div class="h-30"></div>
 
     <!-- Main container -->
-    <div class="container main-container clearfix"> 
+    <div class="container main-container clearfix">
         <div class="col-md-6">
             <img src="img/way/waybrain.jpg" class="img-responsive" alt="" />
         </div>
         <div class="col-md-6">
-           <h3 class="uppercase">Overshoot </h3>
-           <h5>Created for Dave Beach to demonstrate casting fundementals in a fun way</h5>
+           <h3 class="uppercase">Wayfinder </h3>
+           <h5>A compass that always points towards a set home point</h5>
            <div class="h-30"></div>
-            <p>The KED is an orthotic device built for Max Conserva to increase the extension force of his right knee. When he was 8 years old, Max was involved in a life changing accident that greatly damaged the quadricepts on his right knee, leaving them unable to bear weight without pain. I was the principal designer, with suport from Marshall Haltom in design and logistics. Eddie Momanyi and Jesse Shapiro provided testing support, and it was based on inital groundwork by Marshall Haltom and Susan Nitta</p>
+            <p>Wayfinder began as an exercise to try and develop product ideas. I took a liking to it, as a neatly scoped and doable function and as an opportunity to refine my experience with pcb layout and embedded firmware. It uses a gps and magnetometer to resolve a heading towards a coordinate, and then uses a ring of LEDs to indicate distance and direction as well as device status.</p>
 
             <div class="h-10"></div>
 
@@ -93,76 +93,62 @@
         </div>
     </div>
 
-    <!-- Main container -->
-    <div class="container main-container clearfix"> 
-        <div class="col-md-6">
-            <img src="img/way/wayrev0.jpg" class="img-responsive" alt="" />
-        </div>
-        <div class="col-md-6">
-           <div class="h-30"></div>
-            <h3 class="uppercase"> Design </h3>
-            <p>The KED works by shifting the flexion stength of Max's right knee to extension, by use of a tensile rubber cord running over his right knee. This rubber cord also moves over rollers that allow the tension at the top and bottom of the cord to equalize, and change the momemnt arm of the cord increasing tension nonlinearly deep in a bend. The cords are also easily removeable, allowing different tensions and preloads for different activities by quickly swapping bands.</p>
-            <div class="h-10"></div>
-        </div>
-    </div>
-    <!-- end Main container -->
-
-    <div class="container main-container clearfix"> 
+    <div class="container main-container clearfix">
         <div class="col-md-6">
             <img src="img/way/wayrev0back.jpg" class="img-responsive" alt="" />
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Design </h3>
-            <p>The KED works by shifting the flexion stength of Max's right knee to extension, by use of a tensile rubber cord running over his right knee. This rubber cord also moves over rollers that allow the tension at the top and bottom of the cord to equalize, and change the momemnt arm of the cord increasing tension nonlinearly deep in a bend. The cords are also easily removeable, allowing different tensions and preloads for different activities by quickly swapping bands.</p>
+            <h3 class="uppercase"> Initial prototype </h3>
+            <p>The initial prototype was simply a functional prototype, and was not intended to proof out any final hardware. I used components I had laying around, and then cobbled them into a functioning prototype that would resolve a good heading. After my first experiments with a non tilt compensated compass, I decided that an accelerometer would also be a required component.s</p>
             <div class="h-10"></div>
         </div>
     </div>
 
-    <div class="container main-container clearfix"> 
+    <div class="container main-container clearfix">
         <div class="col-md-6">
             <img src="img/way/wayrev1.jpg" class="img-responsive" alt="" />
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Pattern Making </h3>
-            <p>Many different geometries and tensile elements were tested, but we ultimately settled on a natural latex rubber because it was compliant and did not require dangerous concentrations of force, and a progressive roller cam that drastically increased force in a deep bend, and to allowed rolling to keep the tension in the rubber constant over it's length during stretching. Direct user testing was critical, as Max had insights into how each design felt and responded to complex motions like walking, running and jumping.</p>
+            <h3 class="uppercase"> First PCB Revision </h3>
+            <p>In this first revision, I tried to segment the different subsystems of the wayfinder, so that I could easily prove out individual subsystems. I included an onboard charge controller for a lipo battery, as well as power control circuitry for those subsytems to allow low power operation, a topic that I was interested in developing an understanding of and wanted to be able to implement. I used an off the shelf SMD GPS to avoid issues with antenna design and other topics of little interest to me. I used a standard atmel chip, to be able to quickly test with an arduino bootloader, and move to AVR-GCC when necessary.</p>
             <div class="h-10"></div>
         </div>
     </div>
 
-    <div class="container main-container clearfix"> 
+    <div class="container main-container clearfix">
         <div class="col-md-6">
             <img src="img/way/wayrev2.jpg" class="img-responsive" alt="" />
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Ramming up </h3>
-            <p>Once the design was decided upon, I machined a protype from aluminum to test a proposed finalized geometry. This was designed to stand to last longer than our rapid prototypes, and be a more permanent fixture on Max's brace. This allowed us to test longer term usability, during extended workouts and runs. This prototype functioned well, but after a week the aluminum exhibitied aggressive wear, and we decided the final part would should be made from stainless steel for wear and volume reasons. </p>
+            <h3 class="uppercase"> Second Revision </h3>
+            <p>For the next revision, I switched to using a smaller profile components in anticipation of getting the PCBs assembled, and a pogo pin connector and charger so that I could place the battery on the front of the PCB and keep the back flat. I custom programming cradle was a nice touch to enable testing and easy reflashing of the firmware. I made sure to switch to a set of standard components used by Seeed Studio, so that when they did assembly there would be minimal issues.</p>
             <div class="h-10"></div>
         </div>
     </div>
 
-    <div class="container main-container clearfix"> 
+    <div class="container main-container clearfix">
         <div class="col-md-6">
             <img src="img/way/wayrev3.jpg" class="img-responsive" alt="" />
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Pouring Metal </h3>
-            <p>Due to the nature of Max's injury, after time and testing there were always ways to improve his brace. This was the final prototype we could make during our one quarter developing this solution for Max. It was machined by a machine shop from 303 stainless steel, so that he could use it in more corosive conditions such as biking in the rain or snowboarding, and so that it would wear slower with normal use. He now uses it daily and it is a staple on his website, <a href="http:\\www.goodleg.org">GoodLeg.org</a>. Special thanks to Max Conserva for being brave enough to let us strap untested devices to his leg.</p>
+            <h3 class="uppercase"> Outsourced Assembly </h3>
+            <p>It took an embarrassingly large amount of time to assemble one of these boards by hand, and I was not interested in repeating the experience of assembling one. I had never had PCBA done, so I took this opportunity to get a run of five of these boards made. It went incredibly well, and only required me to solder on the GPS and LEDs myself, which Seeed Studio did not have in inventory. Thise boards worked perfectly when they arrived, and cost me much less time in assembly.</p>
             <div class="h-10"></div>
         </div>
     </div>
 
-     <div class="container main-container clearfix"> 
+     <div class="container main-container clearfix">
         <div class="col-md-6">
             <img src="img/way/wayrev3on.jpg" class="img-responsive" alt="" />
         </div>
         <div class="col-md-6">
            <div class="h-30"></div>
-            <h3 class="uppercase"> Postmachining </h3>
-            <p>Due to the nature of Max's injury, after time and testing there were always ways to improve his brace. This was the final prototype we could make during our one quarter developing this solution for Max. It was machined by a machine shop from 303 stainless steel, so that he could use it in more corosive conditions such as biking in the rain or snowboarding, and so that it would wear slower with normal use. He now uses it daily and it is a staple on his website, <a href="http:\\www.goodleg.org">GoodLeg.org</a>. Special thanks to Max Conserva for being brave enough to let us strap untested devices to his leg.</p>
+            <h3 class="uppercase"> Final Version </h3>
+            <p>While they Wayfinder is not a great product due to the ubiquity of phones with precise GPS and mapping applications, it was a great personal experience. I loved starting with a high level design idea, prototyping it, formalizing it in layout, building a high level prototype and then taking it to production. The final device allows you to lock in a home position with an unambiguous input, and then it will always show your way home with quickly and easily.</p>
             <div class="h-10"></div>
         </div>
     </div>
@@ -173,7 +159,7 @@
         </div>
     </footer>
     <!-- end footer -->
-    
+
     <!-- back to top -->
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
     <!-- end back to top -->
