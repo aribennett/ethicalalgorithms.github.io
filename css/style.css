@@ -890,7 +890,7 @@ footer img {
 
 .top-bar {
     color: #333;
-    padding: 100px 0 100px;
+    padding: 150px 0 150px;
     background: -webkit-linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
     background: linear-gradient( rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(../img/01.jpg);
     background-size: cover;
@@ -903,7 +903,7 @@ footer img {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #555;
+    color: #999;
     line-height: 50px;
 }
 
