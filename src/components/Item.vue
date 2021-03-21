@@ -14,6 +14,15 @@
       class="fill-height pa-0"
       no-gutters
     >
+      <v-row v-if="hasAlbum">
+        <v-btn text v-on:click="rotateImage(false)" :height="windowSize.y/3">
+          <v-icon right color="grey"> mdi-arrow-left </v-icon>
+        </v-btn>
+        <v-spacer />
+        <v-btn text v-on:click="rotateImage(true)" :height="windowSize.y/3">
+          <v-icon left color="grey"> mdi-arrow-right </v-icon>
+        </v-btn>
+      </v-row>
       <v-footer class="ma-0" :width="windowSize.x" color="rgb(0, 0, 0, 0.3)">
         <h4 class="white--text">
           {{ desc }}
@@ -42,40 +51,44 @@ export default {
     interval: {
       type: Number,
       default: 3,
-    }
+    },
   },
   methods: {
     onResize() {
       if (window.innerWidth > window.innerHeight) {
         this.windowSize = {
           x: window.innerWidth / 3,
-          y: window.innerHeight / 2.5,
+          y: window.innerWidth / 4,
         };
       } else {
         this.windowSize = {
           x: window.innerWidth,
-          y: window.innerHeight / 2.5,
+          y: window.innerWidth/1.3,
         };
       }
     },
     onHover(state) {
       this.hovered = state;
-      if (this.hovered) {
-        this.rotateTimer = setInterval(this.rotateImage, this.interval * 1000);
-      } else {
-        clearInterval(this.rotateTimer);
-        this.currentImage = 0;
-      }
     },
-    rotateImage() {
-      ++this.currentImage;
-      this.currentImage %= this.src.length;
+    rotateImage(bool) {
+      if (bool) {
+        ++this.currentImage;
+        this.currentImage %= this.src.length;
+      } else {
+        --this.currentImage;
+        if (this.currentImage < 0) {
+          this.currentImage = this.src.length + this.currentImage;
+        }
+      }
     },
   },
   computed: {
     getSrc() {
       return this.src[this.currentImage];
     },
+    hasAlbum() {
+      return(this.src.length > 1)
+    }
   },
 };
 </script>

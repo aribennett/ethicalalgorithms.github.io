@@ -1,20 +1,18 @@
 <template>
   <v-app v-resize="onResize">
     <v-row>
-      <v-img
-        :src="require('./assets/img/header.png')"
-        :height="windowSize.y * 0.8"
-      >
-        <v-container fill-height>
-          <v-col align="center" justify="center">
-            <h1 v-bind:style="{ opacity: 1, fontSize: '50px' }">
+      <v-img :src="require('./assets/banner.jpg')" :height="windowSize.y * 0.6">
+        <v-row fill-height>
+          <v-col align="start" justify="center" class="pa-10">
+            <h1
+              v-bind:style="{ opacity: 1, fontSize: '50px' }"
+              class="white--text"
+            >
               Ari Bennett
             </h1>
-            <h2 v-bind:style="{ opacity: 1 }">
-              Portfolio
-            </h2>
+            <h2 v-bind:style="{ opacity: 1 }" class="white--text">Portfolio</h2>
           </v-col>
-        </v-container>
+        </v-row>
       </v-img>
     </v-row>
     <v-row>
@@ -37,19 +35,26 @@
         desc="Overshoot Casting Study"
       />
       <Item
-        :src="[require('./assets/img/5_momentum/1_mt.jpg')]"
+        :src="[
+          require('./assets/img/5_momentum/1_mt.jpg'),
+          require('./assets/img/5_momentum/2_mt.gif'),
+        ]"
         desc="Momentum Brushless Gyroscope"
       />
     </v-row>
     <v-row>
       <Item
-        :src="[require('./assets/img/7_ked/1_kd.jpg')]"
+        :src="[
+          require('./assets/img/7_ked/1_kd.jpg'),
+          require('./assets/img/7_ked/2_kd.jpg'),
+        ]"
         desc="Knee Enhancement Device"
       />
       <Item
         :src="[
           require('./assets/img/3_tesselite/1_ts.jpg'),
           require('./assets/img/3_tesselite/2_ts.jpg'),
+          require('./assets/img/3_tesselite/3_ts.jpg'),
         ]"
         desc="Tesselight Light Tiles"
       />
@@ -72,7 +77,10 @@
         desc="Desktop Laser Cutter"
       />
       <Item
-        :src="[require('./assets/img/9_iron/1_ir.jpg')]"
+        :src="[
+          require('./assets/img/9_iron/1_ir.jpg'),
+          require('./assets/img/9_iron/2_ir.jpg'),
+        ]"
         desc="Custom Soldering Iron"
       />
       <Item
@@ -102,7 +110,10 @@
     </v-row>
     <v-row>
       <Item
-        :src="[require('./assets/img/10_kiwi/1_ki.jpg')]"
+        :src="[
+          require('./assets/img/10_kiwi/1_ki.jpg'),
+          require('./assets/img/10_kiwi/2_ki.jpg'),
+        ]"
         desc="Kiwi Keyless Entry"
       />
       <Item
@@ -113,7 +124,10 @@
         desc="Touch Torch Flashlight"
       />
       <Item
-        :src="[require('./assets/img/12_218/1_218.jpg')]"
+        :src="[
+          require('./assets/img/12_218/1_218.jpg'),
+          require('./assets/img/12_218/2_218.jpg'),
+        ]"
         desc="Graduate Mechatronics"
       />
     </v-row>
@@ -127,7 +141,10 @@
         desc="Candy Molds"
       />
       <Item
-        :src="[require('./assets/img/15_way/1_way.jpg')]"
+        :src="[
+          require('./assets/img/15_way/1_way.jpg'),
+          require('./assets/img/15_way/2_way.jpg'),
+        ]"
         desc="Digital Wayfinder"
       />
     </v-row>
