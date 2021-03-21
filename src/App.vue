@@ -5,7 +5,7 @@
         :src="require('./assets/img/header.png')"
         :height="windowSize.y * 0.8"
       >
-        <v-row align="center" justify="center" class="fill-height" no-gutters>
+        <v-container fill-height>
           <v-col align="center" justify="center">
             <h1 v-bind:style="{ opacity: 1, fontSize: '50px' }">
               Ari Bennett
@@ -14,7 +14,7 @@
               Portfolio
             </h2>
           </v-col>
-        </v-row>
+        </v-container>
       </v-img>
     </v-row>
     <v-row>
