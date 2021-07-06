@@ -38,7 +38,7 @@ Designed an electric skateboard controller and managed user testing and DFM
 ### KIWI GMBH, Mechanical Engineering and Product Design Intern, 2014 
 Owned and developed the ID, user testing and DFM for a consumer keyless entry solution 
 
-### Education
+## Education
 Stanford University, Mechanical Engineering, BS 2015, MS 2017
 
 
