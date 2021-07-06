@@ -8,7 +8,6 @@
     @mouseleave.native="onHover(false)"
   >
     <v-row
-      v-if="hovered"
       align="end"
       justify="center"
       class="fill-height pa-0"

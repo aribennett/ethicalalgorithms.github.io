@@ -1,30 +1,27 @@
 <template>
   <v-app v-resize="onResize">
     <v-row>
-      <v-img :src="require('./assets/banner.jpg')" :height="windowSize.y * 0.6">
+      <v-img
+        :src="require('./assets/banner.jpg')"
+        :height=90
+        gradient="to right, rgba(0,0,0,1), rgba(0,0,0,.8)"
+      >
         <v-row fill-height>
-          <v-col align="start" justify="center" class="pa-10">
+          <v-col align="start" justify="start" class="mx-5">
             <h1
               v-bind:style="{ opacity: 1, fontSize: '50px' }"
-              class="white--text"
+              class="white--text mb-n5"
             >
               Ari Bennett
             </h1>
-            <h2 v-bind:style="{ opacity: 1 }" class="white--text">Portfolio</h2>
+            <h2 v-bind:style="{ opacity: 1 }" class="white--text mt-n5">
+              Design Portfolio
+            </h2>
           </v-col>
         </v-row>
       </v-img>
     </v-row>
     <v-row>
-      <Item
-        :src="[
-          require('./assets/img/1_resharp/1_rs.jpg'),
-          require('./assets/img/1_resharp/2_rs.jpg'),
-          require('./assets/img/1_resharp/3_rs.png'),
-        ]"
-        desc="Resharp Knife Sharpening"
-        :interval="3"
-      />
       <Item
         :src="[
           require('./assets/img/2_overshoot/1_os.jpg'),
@@ -33,6 +30,15 @@
         ]"
         :interval="5"
         desc="Overshoot Casting Study"
+      />
+      <Item
+        :src="[
+          require('./assets/img/1_resharp/1_rs.jpg'),
+          require('./assets/img/1_resharp/2_rs.jpg'),
+          require('./assets/img/1_resharp/3_rs.png'),
+        ]"
+        desc="Resharp Knife Sharpening"
+        :interval="3"
       />
       <Item
         :src="[
@@ -45,18 +51,18 @@
     <v-row>
       <Item
         :src="[
-          require('./assets/img/7_ked/1_kd.jpg'),
-          require('./assets/img/7_ked/2_kd.jpg'),
-        ]"
-        desc="Knee Enhancement Device"
-      />
-      <Item
-        :src="[
           require('./assets/img/3_tesselite/1_ts.jpg'),
           require('./assets/img/3_tesselite/2_ts.jpg'),
           require('./assets/img/3_tesselite/3_ts.jpg'),
         ]"
         desc="Tesselight Light Tiles"
+      />
+      <Item
+        :src="[
+          require('./assets/img/7_ked/1_kd.jpg'),
+          require('./assets/img/7_ked/2_kd.jpg'),
+        ]"
+        desc="Knee Enhancement Device"
       />
       <Item
         :src="[
@@ -119,6 +125,7 @@
       <Item
         :src="[
           require('./assets/img/11_tt/2_tt.jpg'),
+          require('./assets/img/11_tt/3_tt.png'),
           require('./assets/img/11_tt/1_tt.jpg'),
         ]"
         desc="Touch Torch Flashlight"
